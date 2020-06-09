@@ -1,5 +1,9 @@
 #!/bin/sh -l
 
+cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
+
+cf install-plugin multiapps
+
 cf api "$INPUT_CF_API"
 cf auth "$INPUT_CF_USERNAME" "$INPUT_CF_PASSWORD"
 

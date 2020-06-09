@@ -1,6 +1,8 @@
 #!/bin/sh -l
 
-echo y | cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org y
+echo 'Hello' | cat
+
+echo 'y' | cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org y
 
 cf install-plugin multiapps
 

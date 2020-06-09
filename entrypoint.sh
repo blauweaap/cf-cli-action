@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
+cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org y
 
 cf install-plugin multiapps
 

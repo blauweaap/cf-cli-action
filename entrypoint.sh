@@ -1,10 +1,7 @@
 #!/bin/sh -l
 
-echo 'Hello' | cat
-
 echo 'y' | cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org y
-
-cf install-plugin multiapps
+echo 'y' | cf install-plugin multiapps
 
 cf api "$INPUT_CF_API"
 cf auth "$INPUT_CF_USERNAME" "$INPUT_CF_PASSWORD"
